@@ -1,0 +1,10 @@
+.form-control{
+background: brown;
+color: yellow;
+display: inline-block;
+}
+
+.form-text text-muted{
+    color: grey;
+    display: inline-block;
+} 
