@@ -107,3 +107,38 @@ default:
 
 }
 
+
+/* Написати „банківську” програму, яка за отриманими даними (початковий капітал, процентна ставка і строк вкладу) 
+виводить на екран суму, яка буде на рахунку за введений строк.*/
+let proc = 20;
+let d = parseInt(prompt("HOMEWORK 4\n======== BANK =================== \ninterest rate = 20%\nEnter capital: "));
+console.log("Capital = >", d);
+console.log("% in one month", proc);
+let c = parseInt(prompt("Enter months: "));
+console.log("Period = >", c, " months");
+
+let sum = c*(proc/100*d)+d;
+
+console.log("Summa = >", sum);
+/* 
+Написати програму, яка виводить на екран прості числа в діапазоні від 2 до 1000. 
+(Число називається простими, якщо воно ділиться лише на 1 і на саме себе без остачі; 
+причому числа 1 і 2 простими не являються).  */
+
+console.log("Prime number: ");
+let pointer;
+let i,j;
+for (i=3; i<1000; i++) {
+    pointer=true;
+    for (j=3; j<i; j++) if (!(i%j)) { pointer=false; break; };         
+    if (pointer==true) 
+    console.log("  ",i);
+    }
+
+
+
+
+
+
+
+
